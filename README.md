@@ -1,9 +1,18 @@
-# vision_based_driving_DL_HW5
-CNN model to do vision-based driving in SuperTuxKart
-design a simple low-level controller that acts as an auto-pilot to drive in SuperTuxKart. We then use this auto-pilot to train a vision based driving system. 
+### Vision-Based Autonomous Driving with Deep Learning
 
-# Controller
-In the first part of this homework, you will write a low-level controller in controller.py. The controller function takes as input an aim point and the current velocity of the car. The aim point is a point on the center of the track 15 meters away from the kart
+I developed an end-to-end deep learning pipeline for vision-based autonomous driving in SuperTuxKart. The project involved:
 
-# Planner
-In the second part, you will train a planner to predict the aim point. The planner takes as input an image and outputs the aim point in the image coordinate. Your controller then maps those aim points to actions.
+✅ Low-Level Controller: Engineered a rule-based controller to steer a kart using game-state information. Tuned hyperparameters for optimal driving performance across multiple tracks.
+
+✅ Data Collection & Processing: Captured a large dataset of images and corresponding steering targets using the controller, creating a foundation for supervised learning.
+
+✅ Deep Learning Model: Designed and trained a CNN-based planner to predict steering points from raw images. Leveraged encoder-decoder architecture and a spatial argmax layer for precise aim-point detection.
+
+✅ Evaluation & Optimization: Fine-tuned the model for real-time inference, benchmarked performance on multiple tracks, and ensured generalization to unseen environments.
+
+# Skills Highlighted:
+- Computer Vision (CNNs, Deep Learning)
+- Reinforcement Learning Concepts (Agent Control)
+- Data Pipeline Engineering (Collection, Processing, Labeling)
+- Hyperparameter Tuning & Model Optimization
+- Python (PyTorch, NumPy), Open-Source Simulation Environments
